@@ -1,6 +1,6 @@
-![Gmail Login API Banner](banner.png)
-
 # 📧 Gmail Login Api
+
+![Gmail Login API Banner](banner.png)
 
 <div align="center">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -13,18 +13,18 @@ Automates Google account sign-in and get session cookies.
 
 ## ✨ Features
 
-- 🔐 Full Google sign-in flow via internal API
-- 🎓 **Edu mail support** — automatically handles Google Workspace Terms of Service speedbump
-- 💾 Saves session cookies
-- ⚠️ Detects invalid email, wrong password, and edu mail automatically
+-  Full Google sign-in flow via internal API
+-  **Edu mail support** — automatically handles Google Workspace Terms of Service speedbump
+-  Saves session cookies
+-  Detects invalid email, wrong password, and edu mail automatically
 
 ## 📸 Preview
 
 <div align="center">
+  <img src="edumail.jpg" width="500" alt="Edu Mail" />
   <img src="Screenshot%202026-05-08%20103548.png" width="500" alt="Screenshot 1" />
   <img src="Screenshot%202026-05-08%20103640.png" width="500" alt="Screenshot 2" />
   <img src="Screenshot%202026-05-08%20103731.png" width="500" alt="Screenshot 3" />
-  <img src="edumail.jpg" width="500" alt="Edu Mail" />
 </div>
 
 ## 🔄 Flow
