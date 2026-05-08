@@ -14,8 +14,7 @@ Automates Google account sign-in and get session cookies.
 <div align="center">
   <img src="Screenshot%202026-05-08%20103548.png" width="500" alt="Screenshot 1" />
   <img src="Screenshot%202026-05-08%20103640.png" width="500" alt="Screenshot 2" />
-  <img src="Screenshot%202026-05-08%20103716.png" width="500" alt="Screenshot 3" />
-  <img src="Screenshot%202026-05-08%20103731.png" width="500" alt="Screenshot 4" />
+  <img src="Screenshot%202026-05-08%20103731.png" width="500" alt="Screenshot 3" />
   <img src="edumail.jpg" width="500" alt="Edu Mail" />
 </div>
 
