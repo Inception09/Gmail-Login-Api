@@ -1,5 +1,12 @@
 # Gmail Login Api
 
+<div align="center">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.8%2B-blue" />
+  <img alt="Status" src="https://img.shields.io/badge/Status-Active-brightgreen" />
+  <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+</div>
+
 Automates Google account sign-in and get session cookies.
 
 ## Features
