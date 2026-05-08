@@ -1,4 +1,4 @@
-# Gmail Login Api
+# 📧 Gmail Login Api
 
 <div align="center">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -9,14 +9,14 @@
 
 Automates Google account sign-in and get session cookies.
 
-## Features
+## ✨ Features
 
-- Full Google sign-in flow via internal API
-- **Edu mail support** — automatically handles Google Workspace Terms of Service speedbump
-- Saves session cookies
-- Detects invalid email, wrong password, and edu mail automatically
+- 🔐 Full Google sign-in flow via internal API
+- 🎓 **Edu mail support** — automatically handles Google Workspace Terms of Service speedbump
+- 💾 Saves session cookies
+- ⚠️ Detects invalid email, wrong password, and edu mail automatically
 
-## Preview
+## 📸 Preview
 
 <div align="center">
   <img src="Screenshot%202026-05-08%20103548.png" width="500" alt="Screenshot 1" />
@@ -25,13 +25,13 @@ Automates Google account sign-in and get session cookies.
   <img src="edumail.jpg" width="500" alt="Edu Mail" />
 </div>
 
-## Flow
+## 🔄 Flow
 
 ```
 accounts.google.com → identifier → password → (edu: accept ToS) → session saved
 ```
 
-## Output
+## 📤 Output
 
 ```
 [step 2] account found: user@example.com
@@ -40,13 +40,13 @@ accounts.google.com → identifier → password → (edu: accept ToS) → sessio
   cookies saved → user_at_example_com.json
 ```
 
-## Full Source
+## 📖 Full Source
 
 This repository contains a demo version.  
 For the full source contact me on Telegram:
 
 **[@inception00007](https://t.me/inception00007)**
 
-## Disclaimer
+## ⚖️ Disclaimer
 
 For educational purposes only. Use responsibly and only on accounts you own.
