@@ -1,7 +1,6 @@
 <div align="center">
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Gmail%20Login%20API&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Automate%20Google%20Sign-in%20%7C%20Session%20Cookies&descAlignY=55&descSize=18" width="100%"/>
+![Gmail Login API Banner](banner.png)
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
