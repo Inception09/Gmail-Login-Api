@@ -11,6 +11,11 @@ Automates Google account sign-in and get session cookies.
 
 ## Preview
 
+![Screenshot 1](Screenshot%202026-05-08%20103548.png)
+![Screenshot 2](Screenshot%202026-05-08%20103640.png)
+![Screenshot 3](Screenshot%202026-05-08%20103716.png)
+![Screenshot 4](Screenshot%202026-05-08%20103731.png)
+![Edu Mail](edumail.jpg)
 
 ## Flow
 
