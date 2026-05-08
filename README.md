@@ -112,8 +112,6 @@ graph LR
 <!-- Footer Wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Inception09.Gmail-Login-Api&style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/Inception09/Gmail-Login-Api?style=for-the-badge&logo=github&color=gold)
 
 *Made with ❤️ by [@inception00007](https://t.me/inception00007)*
 
