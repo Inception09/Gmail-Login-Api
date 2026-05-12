@@ -1,6 +1,6 @@
 import requests
 
-API_URL = "http://gmail-api.catmmo.com/login"
+API_URL = "https://gmail-api.catmmo.com/login"
 
 def login_and_get_cookies(email, password):
     """
