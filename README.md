@@ -128,7 +128,7 @@ Use the included `gmail-login-api.py` to call the API directly from Python.
 ```python
 import requests
 
-API_URL = "http://gmail-api.catmmo.com/login"
+API_URL = "https://gmail-api.catmmo.com/login"
 
 def login_and_get_cookies(email, password):
     payload = {"email": email, "password": password}
