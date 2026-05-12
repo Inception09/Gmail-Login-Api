@@ -1,3 +1,5 @@
+# 📧 Gmail Login Api
+
 <div align="center">
 
 ![Gmail Login API Banner](banner.png)
@@ -21,6 +23,10 @@
 ![Telegram](https://img.shields.io/badge/Contact-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
 ![EDU](https://img.shields.io/badge/Edu%20Mail-Supported-blueviolet?style=for-the-badge&logo=googleclassroom&logoColor=white)
 
+<!-- New API Badges -->
+![API](https://img.shields.io/badge/REST-API-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Base URL](https://img.shields.io/badge/Base%20URL-gmail--api.catmmo.com-blue?style=for-the-badge&logo=googlechrome&logoColor=white)
+
 </div>
 
 ---
@@ -40,7 +46,124 @@
 
 ---
 
-## 📸 Preview
+## 🌐 Public API
+
+> **Base URL:** `http://gmail-api.catmmo.com`
+
+> 🚧 **This is a preview API** — shared freely for testing purposes.  
+> ❌ **Do not abuse it.** Excessive requests, automation at scale, or malicious use will get you blocked.  
+> If you need the full version or higher limits, contact me on [Telegram](https://t.me/inception00007).
+
+### `POST /login`
+
+Authenticates a Workspace/Edu email and returns session cookies.
+
+#### 📥 Request
+
+```http
+POST /login HTTP/1.1
+Host: gmail-api.catmmo.com
+Content-Type: application/json
+```
+
+```json
+{
+  "email": "your_email@edu_or_workspace.com",
+  "password": "your_password"
+}
+```
+
+> ⚠️ **Note:** `@gmail.com` accounts are **not supported**. Only **Edu / Workspace** emails work.Contact me if you want gmail.com login.
+
+---
+
+#### 📤 Responses
+
+**✅ Success — `200 OK`**
+
+```json
+{
+  "status": "success",
+  "cookies": {
+    "SID": "...",
+    "HSID": "...",
+    "__Secure-1PSID": "...",
+    "__Secure-3PSID": "...",
+    "...": "other cookies"
+  }
+}
+```
+
+> Status can also be `"edu_success"` for Google Workspace/Edu accounts.
+
+**❌ Error — `400 Bad Request`** *(gmail.com used)*
+
+```json
+{
+  "error": "gmail.com not supported in this api contact me if you need. Use edu mail/workspace mail"
+}
+```
+
+**❌ Error — `401 Unauthorized`** *(wrong credentials or blocked)*
+
+```json
+{
+  "status": "wrong_password"
+}
+```
+
+| Status Value | Meaning |
+|:---:|:---|
+| `wrong_password` | Incorrect password |
+| `invalid_email` | Email does not exist |
+| `botguard` | Google bot protection triggered |
+| `error` | Unknown / unexpected error |
+
+---
+
+## 🐍 Client Script
+
+Use the included `gmail-login-api.py` to call the API directly from Python.
+
+```python
+import requests
+
+API_URL = "http://gmail-api.catmmo.com/login"
+
+def login_and_get_cookies(email, password):
+    payload = {"email": email, "password": password}
+    try:
+        response = requests.post(API_URL, json=payload)
+        if response.status_code == 200:
+            data = response.json()
+            if data.get("status") in ("success", "edu_success"):
+                return data.get("cookies")
+        else:
+            print(f"API Error ({response.status_code}): {response.json()}")
+    except requests.exceptions.RequestException as e:
+        print(f"Network Error: {e}")
+    return None
+
+if __name__ == "__main__":
+    email = input("Enter your email: ")
+    password = input("Enter your password: ")
+    cookies = login_and_get_cookies(email, password)
+    if cookies:
+        print("Login successful! Cookies:", cookies)
+    else:
+        print("Login failed.")
+```
+
+**Install dependency & run:**
+
+```bash
+pip install requests
+python gmail-login-api.py
+```
+
+---
+
+## 📸 Preview of Source
 
 <div align="center">
   <img src="edumail.jpg" width="500" alt="Edu Mail" />
@@ -51,7 +174,7 @@
 
 ---
 
-## 🔄 Flow
+## 🔄 Flow of Source
 
 ```
 accounts.google.com → identifier → password → (edu: accept ToS) → session saved
@@ -103,7 +226,7 @@ graph LR
 ## ⚖️ Disclaimer
 
 > ⚠️ **For educational purposes only.**  
-> Use responsibly and **only on accounts you own**.
+> Use responsibly and **only on accounts you own**. Do not abuse the public API.
 
 ---
 
@@ -111,7 +234,6 @@ graph LR
 
 <!-- Footer Wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
 
 *Made with ❤️ by [@inception00007](https://t.me/inception00007)*
 
